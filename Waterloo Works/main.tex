@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\newcommand\spaceyBubbles[1] {%
+\begin{tikzpicture}[scale=3.5]
+    \coordinate (a0) at (0,0);
+    \foreach \sz/\name [count=\cnt,count=\xcnt from 0] in {#1} {%
+        \node[right=0pt of a\xcnt,minimum height=.75cm] (a\cnt) {\name};
+        \path (a\cnt.south);
+        \node[fill=black,circle,minimum size=5*\sz] at ([yshift=-3.5pt]a\cnt.south) {};
+    }
+\end{tikzpicture}}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Henry}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Hu}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge 20882249 (3B CS)} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Waterloo, ON}\\
+	\icon{Phone}{12}{+1 226 759 5829}\\
+	\href{mailto:huhenry50@gmail.com}{\icon{At}{12}{{huhenry50@gmail.com}}}\\
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\href{https://henryhu.dev/}{\icon{Globe}{12}{{Website}}}\\
+	\href{https://github.com/henryhu1}{\icon{Github}{12}{{Github}}}\\
+	\href{https://www.linkedin.com/in/h95hu/}{\icon{Linkedin}{12}{{LinkedIn}}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Summary}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	$\cdot$ Entry level developer optimistic to grow in the CS and software development industry
+
+	$\cdot$ Full-stack work experience, including REST and GraphQL, creating user-facing features/products served through cloud computing
+	
+	$\cdot$ Quick learner, proven technical agility while eager to improve and learn new skills through challenging work problems
+	
+	$\cdot$ Prioritizing diligence and honesty, determined to produce results, fulfill all requirements and take responsibility
+
+	% $\cdot$ Enjoys any and all senses of humour, encouraging employment to also be a 
+\end{minipage}
+
+% \hfill % Whitespace between
+
+\cvsect{Technical Skills}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\textbf{Langauges:} Python\slashsep Java\slashsep C/C++\slashsep TypeScript\slashsep JavaScript\slashsep Kotlin\slashsep Ruby\slashsep SQL\slashsep Bash\slashsep TeX\\
+	\textbf{Database:} PostgreSQL\slashsep DB2\slashsep MySQL \hfill \textbf{CI/CD Familiarity: } Jenkins\slashsep Kubernetes\slashsep BuildKite\slashsep Nomad
+\end{minipage}
+
+% \hfill % Whitespace between
+
+\cvsect{Key Skills}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\begin{center}
+		Full Stack Dev\slashsep Web App Dev\slashsep API Dev\slashsep Unit Testing\slashsep Git\slashsep Azure\slashsep QA\slashsep Project Management\slashsep
+		Agile Methodology\slashsep Sprint Planning\slashsep Jira\slashsep Miro
+	\end{center}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Professional Experience}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\begin{entrylist}
+		\entry
+			{1/2023 -- 4/2023\\\footnotesize{Co-op/intern}}
+			{Full Stack Developer}
+			{Wonolo Inc.\slashsep (Remote) San Francisco, CA}
+			{
+				%\textit{\textcolor[gray]{0.5}{An American startup company providing software for the temporary staffing industry, empowering workers to work flexibly and employers to find reliable employees}}\\
+				$\cdot$ Acclimated to a Rails app serving the temporary staffing industry with a platform to find/offer flexible work \\
+        $\cdot$ Led development in migrating functionality in the web portal to React with over \textbf{10} custom components\\
+				$\cdot$ Implemented \textbf{backend} of customer scheduled reports -- \textbf{2} tables, \textbf{8} GraphQL endpoints and \textbf{1} CRON job\\
+				\texttt{Ruby on Rails}\slashsep\texttt{React}\slashsep\texttt{PostgreSQL}\slashsep\texttt{GraphQL}\slashsep\texttt{Sidekiq}
+			}
+		\entry
+			{5/2022 -- 8/2022\\9/2021 -- 12/2021\\\footnotesize{Co-op/Intern}}
+			{Software Engineer}
+			{PointClickCare\slashsep (Remote) Mississauga, ON}
+			{
+				$\cdot$ Facilitated pharmacy and practitioner communication with a service to organize prescriptions\\
+				$\cdot$ Coded \textbf{integration tests} using Cypress' test suites, as well as maintaining unit test code coverage \textbf{>90\%}\\
+				$\cdot$ Worked on a web imbedded messaging app implemented into the core LTPAC, SaaS product\\
+				$\cdot$ Used \textbf{RESTful web MVCs}, structuring endpoint data, adding controller logic with views serving React pages\\
+				\texttt{Spring Boot}\slashsep\texttt{React Redux}\slashsep\texttt{SQL + SSMS}\slashsep\texttt{JUnit}\slashsep\texttt{Jest}\slashsep\texttt{Cypress}
+			}
+	\end{entrylist}
+\end{minipage}
+
+\cvsect{Projects}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\begin{entrylist}
+		\entry
+			{Ongoing}
+			{\href{https://henryhu.dev}{Personal Website and Portfolio}}
+			{Personal}
+			{
+				$\cdot$ Maintaining a Next.js app, with the main page at a Real Experience Score of \textbf{93} and performance score of \textbf{98}\\
+				\texttt{Typescript}\slashsep\texttt{React}\slashsep\texttt{Node.js}\slashsep\texttt{Next.js}\slashsep\texttt{ChakraUI}
+			}
+		\entry
+			{Spring 2021}
+			{CTOR}
+			{Academic}
+			{
+				$\cdot$ Implemented command line Catan with ASCII graphics for an OOD course, receiving a perfect final mark\\
+				$\cdot$ Collaborated with group in stressing \textbf{best practices} in OOP, software design to take pride in the project\\
+				$\cdot$ Added above-and-beyond features in longest path algorithm and "card" decks, recieving bonus marks \\
+				\texttt{C++}\slashsep\texttt{UML}
+			}
+		\entry
+			{Summer 2019}
+			{\href{https://youtu.be/3za3L2o1PVA}{2D Sidescroller Game}}
+			{Academic}
+			{
+				$\cdot$ Created platformer action game using \textbf{OOP} principles featuring player, projectile and enemy classes \\
+				$\cdot$ Utilized sprite and animation packages for all game entities \\
+				\texttt{Java}\slashsep\texttt{LibGDX}
+			}
+		\entry
+			{Winter 2018}
+			{\href{https://youtu.be/EFxnTDqU5nU}{Pokémon Themed Paint App}}
+			{Academic}
+			{
+				$\cdot$ Scripted a paint program for summative assessment receiving full marks \\
+				$\cdot$ Designed a themed \textbf{GUI} supporting usage of 8 selections of drawing patterns, file IO, music and undo/redo \\
+				\texttt{Python}\slashsep\texttt{Pygame}\slashsep\texttt{Tkinter}
+			}
+	\end{entrylist}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\begin{entrylist}
+		\entry
+			{9/2020 -- 4/2025}
+			{Candidate for Bachelor's of Computer Science}
+			{University of Waterloo}
+			{
+				$\cdot$ Computer Science, Honours Co-op, software engineering specialization\\
+				$\cdot$ 3.96 GPA\\
+				$\cdot$ Relevant courses:
+					\texttt{ Object Oriented Design}\slashsep
+					\texttt{Data Structures}\slashsep
+					\texttt{OS}\slashsep
+					\texttt{Algorithms}\\
+				$\cdot$ \textit{University of Waterloo President's Scholarship, Fall 2020}
+			}
+	\end{entrylist}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+	% \cvsect{Languages}
+
+	% \begin{minipage}[t]{\textwidth}
+	% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% 	\textbf{English} - native \hfill
+	% 	\textbf{French} - proficient \hfill
+	% 	\textbf{Japanese} - intermediate \hfill
+	% 	\textbf{Mandarin} - basic \hfill
+	% \end{minipage}
+
+
+	\cvsect{Research}
+
+	\begin{minipage}[t]{\textwidth}
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
+		\textbf{Undergraduate Research Assistantship} - Dr. Justin Wan\slashsep Deep Learning and AI generated images filtering \\
+    \texttt{Classification}\slashsep\texttt{Feature extraction}\slashsep\texttt{TensorFlow}\slashsep\texttt{NumPy}\slashsep\texttt{Pandas}\slashsep\texttt{Hugging Face}
+	\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
