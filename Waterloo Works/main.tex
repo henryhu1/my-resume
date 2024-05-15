@@ -20,7 +20,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlist{leftmargin=3.5mm}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \newcommand\spaceyBubbles[1] {%
@@ -41,183 +44,54 @@
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-\baselineskip}
 	
 	% If your name is very short, use just one of the lines below
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Henry}}}}} % First name
-	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Hu}}}}} % Last name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Henry Hu}}}}} % First name
 	
 	\vspace{6pt}
 	
 	{\huge 20882249 (4A CS)} % Career or current job title
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-\baselineskip}
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Waterloo, ON}\\
-	\icon{Phone}{12}{+1 226 759 5829}\\
-	\href{mailto:huhenry50@gmail.com}{\icon{At}{12}{{huhenry50@gmail.com}}}\\
+	\icon{MapMarker}{8}{Waterloo, ON}\\
+	\icon{Phone}{8}{+1 226 759 5829}\\
+	\href{mailto:huhenry50@gmail.com}{\icon{At}{8}{{huhenry50@gmail.com}}}\\
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-\baselineskip}
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\href{https://henryhu.dev/}{\icon{Globe}{12}{{Website}}}\\
-	\href{https://github.com/henryhu1}{\icon{Github}{12}{{Github}}}\\
-	\href{https://www.linkedin.com/in/h95hu/}{\icon{Linkedin}{12}{{LinkedIn}}}\\
+	\href{https://henryhu.dev/}{\icon{Globe}{8}{{henryhu.dev}}}\\
+	\href{https://github.com/henryhu1}{\icon{Github}{8}{{github.com/henryhu1}}}\\
+	\href{https://www.linkedin.com/in/h95hu/}{\icon{Linkedin}{8}{{linkedin.com/in/h95hu}}}\\
 \end{minipage}
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
-
-\cvsect{Summary}
-
-\begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	$\cdot$ Entry level developer optimistic to grow in the CS and software development industry
-
-	$\cdot$ Full-stack work experience, including REST and GraphQL, creating user-facing features/products served through cloud computing
-	
-	$\cdot$ Quick learner, proven technical agility and eager to improve and learn new skills through challenging work problems
-	
-	$\cdot$ Prioritizing diligence and honesty, determined to produce results, fulfill all requirements and take responsibility
-
-	% $\cdot$ Enjoys any and all senses of humour, encouraging employment to also be a 
-\end{minipage}
-
-% \hfill % Whitespace between
-
-\cvsect{Technical Skills}
-
-\begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\textbf{Langauges:} Python\slashsep Java\slashsep C/C++\slashsep GitBash\slashsep TypeScript\slashsep JavaScript\slashsep Kotlin\slashsep Ruby\slashsep TeX\\
-	\textbf{Database:} PostgreSQL\slashsep DB2\slashsep MySQL \hfill \textbf{CI/CD: } K8s\slashsep EKS\slashsep GitLab\slashsep Jenkins
-\end{minipage}
 
 % \hfill % Whitespace between
 
 % \cvsect{Key Skills}
 
 % \begin{minipage}[t]{\textwidth}
-% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\vspace{-\baselineskip}
 
 % 	\begin{center}
-% 		Full Stack Dev\slashsep Web App Dev\slashsep API Dev\slashsep Unit Testing\slashsep Git\slashsep Azure\slashsep QA\slashsep Project Management\slashsep
-% 		Agile Methodology\slashsep Sprint Planning\slashsep Jira\slashsep Miro
+% 		Full Stack Dev, Web App Dev, API Dev, Unit Testing, Git, Azure, QA, Project Management,
+% 		Agile Methodology, Sprint Planning, Jira, Miro
 % 	\end{center}
 
 % \end{minipage}
-
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\cvsect{Work Experience}
-
-\begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\begin{entrylist}
-		\entry
-			{9/2023 -- 12/2023\\\footnotesize{Co-op/intern}}
-			{Software Developer}
-			{Infor Global Solutions\slashsep Remote}
-			{
-				$\cdot$ Deployed \textbf{cloud microservices} and optimized integration tests to reduce pipeline time by \textbf{1 hour} as part of the Platform and Dev Ops team using GitLab runners with EKS and helm charts\\
-        $\cdot$ Migrated dev environment into CI/CD workflow with GitLab pipeline YAMLs, bash scripts and GitLab pages\\
-				$\cdot$ Refactored product localization process into automated tool using AWS Translate for over \textbf{20} languages with Docker, K8s, allowing merge request-like reviews, in-line translation edits and XML migration generation\\
-				\texttt{Java}\slashsep\texttt{Bash}\slashsep\texttt{Python}\slashsep\texttt{Dev Ops}\slashsep\texttt{Docker}\slashsep\texttt{GitLab CI/CD}
-			}
-		\entry
-			{1/2023 -- 4/2023\\\footnotesize{Co-op/intern}}
-			{Full Stack Developer}
-			{Wonolo Inc.\slashsep Remote}
-			{
-				%\textit{\textcolor[gray]{0.5}{An American startup company providing software for the temporary staffing industry, empowering workers to work flexibly and employers to find reliable employees}}\\
-				$\cdot$ Developed features for Nomad-using Rails app serving the temporary staffing industry\\
-        $\cdot$ Led development for web portal functionality using React, working with Product and Design to improve user experience and introduce over \textbf{10} custom components interacting with GraphQL endpoints\\
-				$\cdot$ Implemented \textbf{backend} of customer scheduled reports with \textbf{2} tables, \textbf{8} GraphQL endpoints and \textbf{1} CRON job\\
-				\texttt{Ruby on Rails}\slashsep\texttt{React}\slashsep\texttt{PostgreSQL}\slashsep\texttt{GraphQL}\slashsep\texttt{Sidekiq}
-			}
-		\entry
-			{5/2022 -- 8/2022\\9/2021 -- 12/2021\\\footnotesize{Co-op/Intern}}
-			{Software Engineer}
-			{PointClickCare\slashsep Remote}
-			{
-				$\cdot$ Facilitated pharmacy and practitioner communication with a web app to organize prescriptions\\
-				$\cdot$ Coded \textbf{integration tests} using Cypress' test suites, as well as maintaining unit test code coverage \textbf{>90\%}\\
-				$\cdot$ Worked on a web imbedded messaging app implemented into the core LTPAC, SaaS product\\
-				$\cdot$ Used \textbf{RESTful web MVCs}, structuring endpoint data, adding controller logic with views serving React pages\\
-				\texttt{Spring Boot}\slashsep\texttt{React Redux}\slashsep\texttt{SQL + SSMS}\slashsep\texttt{JUnit}\slashsep\texttt{Jest}\slashsep\texttt{Cypress}
-			}
-	\end{entrylist}
-\end{minipage}
-
-\cvsect{Relevant Projects}
-
-\begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\begin{entrylist}
-		\entry
-			{Summer 2023}
-			{Image Classification Django App}
-			{Research}
-			{
-				$\cdot$ Created Django app to train image recognition neural networks on user-provided labelled images which are further used to classify new images with TensorFlow and HuggingFace Python libraries\\
-				$\cdot$ Dockerized backend with Docker Compose, including containers for app, task scheduler and message queue\\
-				$\cdot$ Hosted production level backend using AWS EC2, S3 and RDS\\
-				\texttt{Django}\slashsep\texttt{Celery}\slashsep\texttt{RabbitMQ}\slashsep\texttt{React}\slashsep\texttt{Docker Compose}\slashsep\texttt{EC2}\slashsep\texttt{S3}\slashsep\texttt{RDS}
-			}
-		\entry
-			{Ongoing}
-			{\href{https://henryhu.dev}{Personal Website and Portfolio}}
-			{Personal}
-			{
-				$\cdot$ Maintaining a Next.js app, with the main page at a Real Experience Score of \textbf{93} and performance score of \textbf{98}\\
-				\texttt{Typescript}\slashsep\texttt{React}\slashsep\texttt{Node.js}\slashsep\texttt{Next.js}\slashsep\texttt{ChakraUI}
-			}
-		\entry
-			{Spring 2021}
-			{CTOR}
-			{Academic}
-			{
-				$\cdot$ Implemented command line Catan with ASCII graphics for an OOD course, receiving a perfect final mark\\
-				$\cdot$ Collaborated with group in stressing best practices in OOP, software design to take pride in the project\\
-				$\cdot$ Added above-and-beyond features in longest path algorithm and "card" decks, recieving bonus marks \\
-				\texttt{C++}\slashsep\texttt{UML}
-			}
-		% \entry
-		% 	{Summer 2019}
-		% 	{\href{https://youtu.be/3za3L2o1PVA}{2D Sidescroller Game}}
-		% 	{Academic}
-		% 	{
-		% 		$\cdot$ Created platformer action game using \textbf{OOP} principles featuring player, projectile and enemy classes \\
-		% 		$\cdot$ Utilized sprite and animation packages for all game entities \\
-		% 		\texttt{Java}\slashsep\texttt{LibGDX}
-		% 	}
-		% \entry
-		% 	{Winter 2018}
-		% 	{\href{https://youtu.be/EFxnTDqU5nU}{Pokémon Themed Paint App}}
-		% 	{Academic}
-		% 	{
-		% 		$\cdot$ Scripted a paint program for summative assessment receiving full marks \\
-		% 		$\cdot$ Designed a themed \textbf{GUI} supporting usage of 8 selections of drawing patterns, file IO, music and undo/redo \\
-		% 		\texttt{Python}\slashsep\texttt{Pygame}\slashsep\texttt{Tkinter}
-		% 	}
-	\end{entrylist}
-\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -226,49 +100,137 @@
 \cvsect{Education}
 
 \begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\begin{entrylist}
-		\entry
-			{9/2020 -- 4/2025}
-			{Candidate for Bachelor's of Computer Science}
-			{University of Waterloo}
-			{
-				$\cdot$ Computer Science, Honours Co-op, software engineering specialization\\
-				$\cdot$ 3.96 GPA\\
-				$\cdot$ Relevant courses:
-					\texttt{ Object Oriented Design}\slashsep
-					\texttt{Data Structures}\slashsep
-					\texttt{OS}\slashsep
-					\texttt{Algorithms}\\
-				$\cdot$ \textit{University of Waterloo President's Scholarship, Fall 2020}
-			}
-	\end{entrylist}
+	\vspace{-\baselineskip}
+	\textbf{University of Waterloo} \hfill Sep 2020 -- Apr 2025 \\
+	Candidate for Bachelor's of Computer Science with Software Engineering Specialization, \; 3.96 GPA
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
+%	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-	% \cvsect{Languages}
+\cvsect{Work Experience}
 
-	% \begin{minipage}[t]{\textwidth}
-	% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% 	\textbf{English} - native \hfill
-	% 	\textbf{French} - proficient \hfill
-	% 	\textbf{Japanese} - intermediate \hfill
-	% 	\textbf{Mandarin} - basic \hfill
-	% \end{minipage}
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip}
 
+	\textbf{Infor Global Solutions} \hfill Sep 2023 -- Dec 2023 \\
+	Software Developer \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Deployed \textbf{cloud microservices} and optimized integration tests to
+		reduce pipeline time by \textbf{1 hour} as part of the Platform and Dev Ops team.
+		Done by partitioning Cucumber tests with GitLab runners in the automation pipeline.
+		\item Refactored product localization process into an automated tool using
+		AWS Translate for over \textbf{20} languages. Had merge request-like reviews,
+		in-line translation edits and XML DB migration generation.
+	\end{itemize}
+	\vspace{0.3em}
 
-	\cvsect{Research}
+	\textbf{Wonolo Inc.} \hfill Jan 2023 -- Apr 2023 \\
+	Full Stack Developer \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+				%\textit{\textcolor[gray]{0.5}{An American startup company providing software for the temporary staffing industry, empowering workers to work flexibly and employers to find reliable employees}}\\
+		\item Developed features for Rails app serving the temporary staffing industry by implementing the
+		\textbf{backend} of customer scheduled reports. Achieved with \textbf{2} new DB tables, \textbf{8} GraphQL endpoints and \textbf{1} CRON job.
+		\item Led development for new web portal functionality using React. Worked with Product and Design to improve user
+		experience and introduced over \textbf{10} styled components interacting with GraphQL endpoints.
+	\end{itemize}
+	\vspace{0.3em}
 
-	\begin{minipage}[t]{\textwidth}
-		\vspace{-\baselineskip} % Required for vertically aligning minipages
-		\textbf{Undergraduate Research Assistantship} - Dr. Justin Wan\slashsep Deep Learning and Classification \\
-    \texttt{Classification}\slashsep\texttt{Feature extraction}\slashsep\texttt{TensorFlow}\slashsep\texttt{NumPy}\slashsep\texttt{Pandas}\slashsep\texttt{Hugging Face}
-	\end{minipage}
+	\textbf{PointClickCare} \hfill May 2022 -- Aug 2022\\
+	Software Engineer \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Aided in creating a React web app to organize doctor prescriptions and pharmacy order fulfillments.
+		Wrote \textbf{integration tests} using Cypress' test suites, as well as maintaining unit test code coverage \textbf{>90\%}
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{PointClickCare} \hfill Sep 2021 -- Dec 2021 \\
+	Software Engineer \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Worked on a web imbedded messaging app implemented into the core LTPAC, SaaS product.
+		Used \textbf{RESTful web MVCs} in Spring Boot, structuring endpoint data,
+		adding controller logic with views serving React pages.
+	\end{itemize}
+\end{minipage}
+
+\cvsect{Relevant Projects}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip}
+	\textbf{\href{https://henryhu.dev/pokerbsgame/index.html}{\textcolor{blue}{Poker Hands Game}}} \hfill May 2024 \\
+	Personal
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Published Unity WebGL multiplayer card game, focusing on game logic, TextMeshPro UI and user experience
+		\item Utilized networking components for server connections with Netcode for GameObjects, Relay, Unity Transport and Lobby
+		\item Integrated design patterns including singleton, factory methods and C\# delegates for event subject, observers
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{\href{https://uclassify.henryhu.dev}{\textcolor{blue}{Image Classification Django App}}} \hfill Aug 2023\\
+	Undergraduate Reaserch Assistantship
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Created Django app to allow users to train any of \textbf{4} image recognition neural networks on
+		their own labelled images. Trained models are saved and inference is catered to users'
+		training data.
+		\item Designed the full stack architecure using React and Django, with a backend production instance on AWS and run locally using Docker Compose.
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{\href{https://henryhu.dev}{\textcolor{blue}{Personal Website and Portfolio}}} \hfill Sep 2022\\
+	Personal
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Used Next.js for a personal website, earning a Real Experience Score of \textbf{100} and Best Practices score of \textbf{95}
+		\item Made to easily generate static site content with generalized React components
+	\end{itemize}
+	\vspace{0.3em}
+
+	% \textbf{CTOR} \hfill Apr 2021 \\
+	% Academic \hfill \textcolor{blue}{Object-Oriented Software Development} \\
+	% Implemented command line Catan with ASCII graphics for the final project,
+	% receiving full marks. Emphasized OOD with inheritance, abstraction
+	% and encapsulation with extra features in longest path algorithm and "card" decks
+		% \entry
+		% 	{Summer 2019}
+		% 	{\href{https://youtu.be/3za3L2o1PVA}{2D Sidescroller Game}}
+		% 	{Academic}
+		% 	{
+		% 		$\cdot$ Created platformer action game using \textbf{OOP} principles featuring player, projectile and enemy classes \\
+		% 		$\cdot$ Utilized sprite and animation packages for all game entities \\
+		% 		\texttt{Java},\texttt{LibGDX}
+		% 	}
+		% \entry
+		% 	{Winter 2018}
+		% 	{\href{https://youtu.be/EFxnTDqU5nU}{Pokémon Themed Paint App}}
+		% 	{Academic}
+		% 	{
+		% 		$\cdot$ Scripted a paint program for summative assessment receiving full marks \\
+		% 		$\cdot$ Designed a themed \textbf{GUI} supporting usage of 8 selections of drawing patterns, file IO, music and undo/redo \\
+		% 		\texttt{Python},\texttt{Pygame},\texttt{Tkinter}
+		% 	}
+\end{minipage}
+
+\cvsect{Research}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip}
+	\textbf{Undergraduate Research Assistantship} \hfill May 2023 -- Aug 2023\\
+	Dr. Justin Wan, \; University of Waterloo \hfill \textcolor{gray}{Deep Learning and Classification, Unsupervised learning}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Explored unsupervised method to filter undesirable AI generated images and created online general classification tool
+		\item Worked with deep learning, classification, feature extraction, TensorFlow, NumPy, Pandas, Hugging Face vision models
+	\end{itemize}
+\end{minipage}
+
+\cvsect{Technical Skills}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip}
+	\textbf{Langauges:} Python, Java, C/C++, C\#, TypeScript, JavaScript, Kotlin, TeX, SQL\\
+	\textbf{Technologies:} Unity, GitBash, React, Angular, Next.js, Spring Boot, GraphQL, Django, Kafka, RabbitMQ, Celery, Redis,
+	PostgreSQL, Docker, K8s, AWS, GitLab CICD, Jenkins, HuggingFace, TensorFlow
+\end{minipage}
+
 
 %----------------------------------------------------------------------------------------
 
