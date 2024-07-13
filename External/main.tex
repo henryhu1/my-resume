@@ -118,11 +118,13 @@
 	Software Developer \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item Deployed \textbf{cloud microservices} and optimized integration tests to
-		reduce pipeline time by \textbf{1 hour} as part of the Platform and Dev Ops team.
-		Done by partitioning Cucumber tests with GitLab runners in the automation pipeline.
+		reduce CI/CD pipeline time by \textbf{1 hour} as a member of the Platform and Dev Ops team.
+		Done by parallelizing Cucumber tests into separate K8s pods.
+		\item Dockerized runtime images used by GitLab runners with AWS ECS to provide build artifacts, test 
+		environments and test reports in the \textbf{6+} staged pipeline
 		\item Refactored product localization process into an automated tool using
-		AWS Translate for over \textbf{20} languages. Had merge request-like reviews,
-		in-line translation edits and XML DB migration generation.
+		AWS Translate for over \textbf{20} languages. Had merge-request-like reviews,
+		in-line translation edits and Wildfly DB migration generation.
 	\end{itemize}
 	\vspace{0.3em}
 
@@ -148,7 +150,7 @@
 	\textbf{PointClickCare} \hfill Sep 2021 -- Dec 2021 \\
 	Software Engineer \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Worked on a web imbedded messaging app implemented into the core LTPAC, SaaS product.
+		\item Worked on a web messaging app through Twilio API in a cloud computing environment.
 		Used \textbf{RESTful web MVCs} in Spring Boot, structuring endpoint data,
 		adding controller logic with views serving React pages.
 	\end{itemize}
@@ -161,9 +163,11 @@
 	\textbf{\href{https://henryhu.dev/pokerbsgame/index.html}{\textcolor{blue}{Poker Hands Game}}} \hfill May 2024 \\
 	Personal
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Published Unity WebGL multiplayer card game, focusing on game logic, TextMeshPro UI and user experience
-		\item Utilized networking components for server connections with Netcode for GameObjects, Relay, Unity Transport and Lobby
-		\item Integrated design patterns including singleton, factory methods and C\# delegates for event subject, observers
+		\item Published multiplayer card game through Unity WebGL, featuring server-client architecture,
+		network communication using RPCs and a responsive UI made solely with TextMeshPro
+		\item Utilized Netcode for GameObjects, Relay, Unity Transport and Lobby for connecting to private or public games
+		\item Integrated design patterns including singleton, factory methods and C\# delegates for invoking over \textbf{15} events
+		\item Animated rotation, translation and scaling of UI in coroutines, with \textbf{3} custom interface implementations
 	\end{itemize}
 	\vspace{0.3em}
 
@@ -173,7 +177,8 @@
 		\item Created Django app to allow users to train any of \textbf{4} image recognition neural networks on
 		their own labelled images. Trained models are saved and inference is catered to users'
 		training data.
-		\item Designed the full stack architecure using React and Django, with a backend production instance on AWS and run locally using Docker Compose.
+		\item Designed the full stack architecure using React and Django, with a backend production instance using AWS EC2, RDS, S3 and Route 53,
+		with local runtimes using Docker Compose.
 	\end{itemize}
 	\vspace{0.3em}
 
@@ -217,8 +222,8 @@
 	\textbf{Undergraduate Research Assistantship} \hfill May 2023 -- Aug 2023\\
 	Dr. Justin Wan, \; University of Waterloo \hfill \textcolor{gray}{Deep Learning and Classification, Unsupervised learning}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Explored unsupervised method to filter undesirable AI generated images and created online general classification tool
-		\item Worked with deep learning, classification, feature extraction, TensorFlow, NumPy, Pandas, Hugging Face vision models
+		\item Explored unsupervised method to filter undesirable AI generated images and created general image classification tool
+		\item Worked with deep learning, classification, feature extraction, TensorFlow, NumPy, Hugging Face vision models
 	\end{itemize}
 \end{minipage}
 
