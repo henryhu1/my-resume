@@ -20,10 +20,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{xcolor}
 \usepackage{enumitem}
-\setlist{leftmargin=3.5mm}
+\setlist{leftmargin=3mm}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \newcommand\spaceyBubbles[1] {%
@@ -59,7 +59,7 @@
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{8}{Waterloo, ON}\\
+	\icon{MapMarker}{8}{Windsor, ON}\\
 	\icon{Phone}{8}{+1 226 759 5829}\\
 	\href{mailto:huhenry50@gmail.com}{\icon{At}{8}{{huhenry50@gmail.com}}}\\
 \end{minipage}
@@ -73,7 +73,7 @@
 	\href{https://www.linkedin.com/in/h95hu/}{\icon{Linkedin}{8}{{linkedin.com/in/h95hu}}}\\
 \end{minipage}
 
-\vspace{0.3cm}
+\vspace{0.01cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
@@ -94,18 +94,6 @@
 % \end{minipage}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\cvsect{Education}
-
-\begin{minipage}[t]{\textwidth}
-	\vspace{-\baselineskip}
-	\textbf{University of Waterloo} \hfill Sep 2020 -- Apr 2025 \\
-	Candidate for Bachelor's of Computer Science with Software Engineering Specialization, \; 3.96 GPA
-\end{minipage}
-
-%----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
@@ -114,45 +102,67 @@
 \begin{minipage}[t]{\textwidth}
 	\vspace{-\baselineskip}
 
-	\textbf{Infor Global Solutions} \hfill Sep 2023 -- Dec 2023 \\
-	Software Developer \hfill \textcolor{gray}{Remote}
+	\textbf{Toolbx} \hfill Sep 2024 -- Present (Dec 2024) \\
+	Software Engineer (co-op) \quad \textcolor{gray}{[\;\textit{Node.js, React, GraphQL, PostgreSQL, TypeORM}\;]} \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Deployed \textbf{cloud microservices} and optimized integration tests to
-		reduce CI/CD pipeline time by \textbf{1 hour} as a member of the Platform and Dev Ops team.
+		\item Programed software for construction material e-commerce,
+		with heavy contribution to product enhancements, UX experience.
+		\item Wrote \textbf{3} GraphQL resolvers, \textbf{7} React components, modal rework, refactoring existing code and \textbf{unit tests} for all new code.
+		\item Implemented full stack messaging support using \textbf{Twilio} to facilitate quotes, orders and payments communication for customers,
+		including thread user assignment, persistent filters with local storage,
+		threads pagination, blocking, marking spam and more.
+		\item Collaborated with Product and Design to integrate \textbf{2FA}, requiring DB migrations, working with \texttt{optlib} and new UI/UX.
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{SS\&C} \hfill May 2024 -- Aug 2024 \\
+	Full Stack Developer (co-op) \quad \textcolor{gray}{[\;\textit{Spring boot, Angular, PostgreSQL}\;]} \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Participated in financial asset management software development and \textbf{unit testing}, working with an Angular frontend and Spring boot backend.
+		Component work spanned \textbf{4} tables, file upload UI and common component reworks.
+		\item Took lead in development of JOLT specs (Apache NiFi), transforming JSONs with list, object shifts using traversing operators.
+		Projection data from \textbf{3} endpoints were run through the specs to match schema of downstream external sources.
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{Infor Global Solutions} \hfill Sep 2023 -- Dec 2023 \\
+	Software Developer (co-op) \quad \textcolor{gray}{[\;\textit{Docker, AWS EKS+ECS, K8s, GitLab CI/CD}\;]} \hfill \textcolor{gray}{Remote}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Deployed \textbf{cloud microservices} and optimized CI/CD pipelines,
+		reducing test runtimes by \textbf{1 hour} as a member of the Platform and Dev Ops team.
 		Done by parallelizing Cucumber tests into separate K8s pods.
-		\item Dockerized runtime images used by GitLab runners with AWS ECS to provide build artifacts, test 
-		environments and test reports in the \textbf{6+} staged pipeline
-		\item Refactored product localization process into an automated tool using
-		AWS Translate for over \textbf{20} languages. Had merge-request-like reviews,
-		in-line translation edits and Wildfly DB migration generation.
+		\item Dockerized runtime images used by GitLab runners with AWS ECS to propogate build artifacts, provide test runtime
+		environments and serve test reports in a \textbf{6}-staged pipeline.
+		\item Refactored language localization process into an \textbf{automated} tool using
+		AWS Translate for over \textbf{20} languages. Leveraging \textbf{GitLab pipeline and API}
+		to automate translation, creation of merge-requests and generation of Wildfly DB migrations.
 	\end{itemize}
 	\vspace{0.3em}
 
 	\textbf{Wonolo Inc.} \hfill Jan 2023 -- Apr 2023 \\
-	Full Stack Developer \hfill \textcolor{gray}{Remote}
+	Full Stack Developer (co-op) \quad \textcolor{gray}{[\;\textit{Ruby on Rails, React, GraphQL, PostgreSQL, Redis}\;]} \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
-				%\textit{\textcolor[gray]{0.5}{An American startup company providing software for the temporary staffing industry, empowering workers to work flexibly and employers to find reliable employees}}\\
-		\item Developed features for Rails app serving the temporary staffing industry by implementing the
-		\textbf{backend} of customer scheduled reports. Achieved with \textbf{2} new DB tables, \textbf{8} GraphQL endpoints and \textbf{1} CRON job.
-		\item Led development for new web portal functionality using React. Worked with Product and Design to improve user
-		experience and introduced over \textbf{10} styled components interacting with GraphQL endpoints.
+		\item Developed features for Rails app serving the temporary staffing industry, including the
+		backend of customer scheduled reports. Achieved by creating \textbf{2} DB tables, \textbf{8} GraphQL resolvers and \textbf{1} CRON job.
+		\item Led development for new web portal visuals using React. Worked with Product and Design to improve UX and introduced over \textbf{10} styled common components interacting with GraphQL resolvers, all with \textbf{unit tests}.
 	\end{itemize}
 	\vspace{0.3em}
 
-	\textbf{PointClickCare} \hfill May 2022 -- Aug 2022\\
-	Software Engineer \hfill \textcolor{gray}{Remote}
+	\textbf{PointClickCare} \hfill Sep 2021 -- Dec 2021 / May 2022 -- Aug 2022 \\
+	Software Engineer (co-op) \quad \textcolor{gray}{[\;\textit{Spring boot, React, Cypress}\;]} \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Aided in creating a React web app to organize doctor prescriptions and pharmacy order fulfillments.
-		Wrote \textbf{integration tests} using Cypress' test suites, as well as maintaining unit test code coverage \textbf{>90\%}
+		\item Aided in developing React web app to organize prescriptions and pharmacy orders.
+		\textbf{Integration tests} wrote with Cypress.
 	\end{itemize}
 	\vspace{0.3em}
 
-	\textbf{PointClickCare} \hfill Sep 2021 -- Dec 2021 \\
-	Software Engineer \hfill \textcolor{gray}{Remote}
+	% \textbf{PointClickCare} \hfill \\
+	% Software Engineer (co-op) \quad \textcolor{gray}{[\;\textit{Spring boot, React}\;]} \hfill \textcolor{gray}{Remote}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Worked on a web messaging app through Twilio API in a cloud computing environment.
-		Used \textbf{RESTful web MVCs} in Spring Boot, structuring endpoint data,
-		adding controller logic with views serving React pages.
+		\item Worked on a web messaging app using Twilio API in an Azure cloud environment.
+		Learned about \textbf{RESTful web MVCs} in Spring Boot, using \textbf{DTOs},
+		and React functional components. 
+		\item Wrote logic as well as \textbf{unit tests} for controllers, models and frontend components. Maintained \textbf{>90\%} code coverage.
 	\end{itemize}
 \end{minipage}
 
@@ -160,33 +170,42 @@
 
 \begin{minipage}[t]{\textwidth}
 	\vspace{-\baselineskip}
-	\textbf{\href{https://henryhu.dev/pokerbsgame/index.html}{\textcolor{blue}{Poker Hands Game}}} \hfill May 2024 \\
-	Personal
+	\textbf{\href{https://youtube.com/shorts/Q4wsoV7939M}{\textcolor{blue}{Showdown - Mobile}}} \quad \textcolor{gray}{[\;\textit{Unity, Netcode for GameObjects, Relay, Lobby}\;]} \hfill Nov 2024
+	% Personal
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Published multiplayer card game through Unity WebGL, featuring server-client architecture,
-		network communication using RPCs and a responsive UI made solely with TextMeshPro
-		\item Utilized Netcode for GameObjects, Relay, Unity Transport and Lobby for connecting to private or public games
-		\item Integrated design patterns including singleton, factory methods and C\# delegates for invoking over \textbf{15} events
-		\item Animated rotation, translation and scaling of UI in coroutines, with \textbf{3} custom interface implementations
+		\item Designed a two-player, rock-paper-scissors-like online game with Unity. Appealing \textbf{UI feedback},
+		\textbf{server-sided} state-keeping and client-side \textbf{animations} driven by the DOTWEEN asset was prioritized.
+		\textbf{Drew 20 sprites} in Krita.
+		\item Implemented \textbf{shake detection} and \textbf{4 gesture swipes} as proof of mobile integration to enhance gameplay.
+		\item Used the \textbf{Google Play Games} plugin for Unity, creating \textbf{9} unlockable achievements. In Closed Testing on Google Play Console.
 	\end{itemize}
 	\vspace{0.3em}
 
-	\textbf{\href{https://uclassify.henryhu.dev}{\textcolor{blue}{Image Classification Django App}}} \hfill Aug 2023\\
-	Undergraduate Reaserch Assistantship
+	\textbf{\href{https://henryhu.dev/pokerbsgame/index.html}{\textcolor{blue}{Poker Hands Game - WebGL}}} \quad \textcolor{gray}{[\;\textit{Unity, Netcode for GameObjects, Relay, Lobby}\;]} \hfill May 2024
+	% Personal
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Published multiplayer card game through Unity WebGL, with players taking turns declaring plausible poker hands from all dealt cards. Managed \textbf{server-sided} game state,
+		\textbf{network communication} using \textbf{RPCs} and \textbf{card hierarchy} logic driven by \textbf{OOP}.
+		\item Utilized Netcode for GameObjects, Relay, Unity Transport and Lobby to connect players to \textbf{public} or \textbf{private} games.
+		\item Integrated \textbf{design patterns} like singleton, factory methods, observer-subject. C\# delegates invoked over \textbf{15} different game events.
+		\item Animated rotating, translating and scaling \textbf{UI} in coroutines using \textbf{3} interface implementations, along with tooltips and highlighting.
+	\end{itemize}
+	\vspace{0.3em}
+
+	\textbf{\href{https://uclassify.henryhu.dev}{\textcolor{blue}{Image Classification Web App}}} \quad \textcolor{gray}{[\;\textit{Django, React}\;]} \hfill Aug 2023
+	% Undergraduate Reaserch Assistantship
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item Created Django app to allow users to train any of \textbf{4} image recognition neural networks on
 		their own labelled images. Trained models are saved and inference is catered to users'
-		training data.
-		\item Designed the full stack architecure using React and Django, with a backend production instance using AWS EC2, RDS, S3 and Route 53,
-		with local runtimes using Docker Compose.
+		training data. Production deployment used AWS EC2, RDS, S3 and Route 53.
 	\end{itemize}
 	\vspace{0.3em}
 
-	\textbf{\href{https://henryhu.dev}{\textcolor{blue}{Personal Website and Portfolio}}} \hfill Sep 2022\\
-	Personal
+	\textbf{\href{https://henryhu.dev}{\textcolor{blue}{Personal Website and Portfolio}}} \quad \textcolor{gray}{[\;\textit{React, Next.js}\;]} \hfill Sep 2022
+	% Personal
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Used Next.js for a personal website, earning a Real Experience Score of \textbf{100} and Best Practices score of \textbf{95}
-		\item Made to easily generate static site content with generalized React components
+		\item Used Next.js for a personal website hosted by Vercel, earning a Real Experience Score of \textbf{100} and Best Practices score of \textbf{95}.
+		% \item Made to leverage \textbf{static site generation} with generalized React components so that frequent content updates are easy.
 	\end{itemize}
 	\vspace{0.3em}
 
@@ -215,25 +234,38 @@
 		% 	}
 \end{minipage}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip}
+	\textbf{University of Waterloo} \hfill Sep 2020 -- Apr 2025 \\
+	Candidate for Bachelor's of Computer Science with Software Engineering Specialization \quad 3.96 GPA \\
+	Relevant courses: OOD, Data Structures, Algorithms, UI, OS, Software Design \& Architecture, Software Testing/QA
+\end{minipage}
+
 \cvsect{Research}
 
 \begin{minipage}[t]{\textwidth}
 	\vspace{-\baselineskip}
 	\textbf{Undergraduate Research Assistantship} \hfill May 2023 -- Aug 2023\\
-	Dr. Justin Wan, \; University of Waterloo \hfill \textcolor{gray}{Deep Learning and Classification, Unsupervised learning}
+	Dr. Justin Wan, \; University of Waterloo \hfill \textcolor{gray}{Deep Learning and Classification, Unsupervised Learning}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Explored unsupervised method to filter undesirable AI generated images and created general image classification tool
-		\item Worked with deep learning, classification, feature extraction, TensorFlow, NumPy, Hugging Face vision models
+		\item Explored unsupervised method to filter undesirable AI generated images that lead to creating a general image classification tool
+		\item Worked with deep learning, feature extraction and classification using \textbf{TensorFlow} and \textbf{Hugging Face} vision models
 	\end{itemize}
 \end{minipage}
 
-\cvsect{Technical Skills}
+\cvsect{Langauges}
 
 \begin{minipage}[t]{\textwidth}
 	\vspace{-\baselineskip}
-	\textbf{Langauges:} Python, Java, C/C++, C\#, TypeScript, JavaScript, Kotlin, TeX, SQL\\
-	\textbf{Technologies:} Unity, GitBash, React, Angular, Next.js, Spring Boot, GraphQL, Django, Kafka, RabbitMQ, Celery, Redis,
-	PostgreSQL, Docker, K8s, AWS, GitLab CICD, Jenkins, HuggingFace, TensorFlow
+	\textbf{Programming:} Python, Java, C/C++, C\#, TypeScript
+	\hfill
+	\textbf{Human:} English, DELF B2 French, N1 Level Japanese
 \end{minipage}
 
 
